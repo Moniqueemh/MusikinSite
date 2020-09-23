@@ -13,20 +13,37 @@ h1 {
 main{
     display: flex;
     justify-content: center;
+    /* flex-wrap: nowrap; */
+    width: auto;
+    margin: 2em;
 }
 
 aside {
 border: dotted black 1px;
-    display: flex;
-    justify-content: flex-start;
-    padding:20em;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    
+    margin-right: 20px;
+    /* width: auto; */
+    flex: 0 0 45%;
 
 }
 
 section{
     border: solid black 1px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20em;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    
+    margin-left:20px ;
+    /* width: auto; */
+    flex: 0 0 55%;
 
+}
+header{
+    text-align: center;
+}
+
+p{
+    word-wrap:break-word;
+    padding: 2em;
 }

@@ -4,6 +4,7 @@ MusikinSite
 
 
 
+
 # Project Description
 We want an application that can pull artist and song information, as well as, pulling lyrics from a web api. 
 Two sections within the browser with an engine to look up bands/artist songs, pull that info, and display it. Another search bar to help lookup/pull the lyrics from the other api.
