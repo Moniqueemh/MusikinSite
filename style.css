@@ -5,6 +5,8 @@
     border-radius: 8px;
     margin: 15px;
     padding: 10em;
+    display: flex;
+    justify-content: center;
 }
 
 h1 {
