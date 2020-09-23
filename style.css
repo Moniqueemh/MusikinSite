@@ -1,0 +1,32 @@
+.heading{
+    background-color:DodgerBlue ;
+    color: white;
+    border: solid  grey 1px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 10em;
+}
+
+h1 {
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+border: dotted black 1px;
+    display: flex;
+    justify-content: flex-start;
+    padding:20em;
+
+}
+
+section{
+    border: solid black 1px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20em;
+
+}
