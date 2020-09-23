@@ -1,22 +1,30 @@
 # Project Title
+MusikinSite
+
+
+
 
 # Project Description
-
-On our application we will have a series of buttons: "Joke", "Roast me", or "surprise me" ( containing a Giphy )
-When the user clicks on one of the buttons, it will generate/request from API url to give us one of the following
-
-
-Joke- pulling a generated joke
-Roast me- pulling a generated insult (class appropriate)
-Surprise me- giphy of our choice
+We want an application that can pull artist and song information, as well as, pulling lyrics from a web api. 
+Two sections within the browser with an engine to look up bands/artist songs, pull that info, and display it. Another search bar to help lookup/pull the lyrics from the other api.
 
 
 
 # User Story
-AS A --person-- with an incredibly busy schedule, I WANT  --to request a bit of light humor--, SO THAT I --can take a break from my work--.
+AS (A music lover) I WANT (to request information on artists/bands), SO THAT (I can sing the correct lyrics and know more about my favorite artist/band).
 
 # Wire Frame
-![alt text](images/image.png)
+
+![alt text](images/wireframe.jpg)
+
 # APIs to be used
-https://sv443.net/jokeapi/v2/
+<!-- this Api will allow you to find local bands playing within the area  -->
+https://artists.bandsintown.com/support/public-api
+
+
+https://www.last.fm/api
+apiKey: 10a27986ff454210e0ad746d11440bec
+
+<!-- Main API that will be pulling the lyrics to our site based on the song we look up  -->
+https://lyricsovh.docs.apiary.io/#reference/0/lyrics-of-a-song/search
 
