@@ -45,6 +45,19 @@ header{
     text-align: center;
 }
 
+form{
+    margin: 2em;
+}
+input {
+    display: block;
+    padding: 4px;
+    margin: 6px;
+}
+#searchBtn{
+    
+}
+
+
 p{
     word-wrap:break-word;
     padding: 2em;
