@@ -16,7 +16,7 @@ AS (A music lover) I WANT (to request information on artists/bands), SO THAT (I 
 
 # Wire Frame
 
-![alt text](images/wireframe.jpg)
+![alt text](images/wireframe.png)
 
 # APIs to be used
 <!-- this Api will allow you to find local bands playing within the area  -->
