@@ -1,68 +1,17 @@
 .heading {
-  background-color: DodgerBlue;
-  color: white;
-  border: solid grey 1px;
-  border-radius: 8px;
-  margin: 15px;
-  padding: 10em;
-  display: flex;
-  justify-content: center;
+background-color: DodgerBlue;
+color: white;
+border: solid grey 1px;
+border-radius: 8px;
+margin: 15px;
+padding: 10em;
+display: flex;
+justify-content: center;
 }
 
 h1 {
-  text-align: center;
+text-align: center;
 }
-main {
-  display: flex;
-  justify-content: center;
-  /* flex-wrap: nowrap; */
-  width: auto;
-  margin: 2em;
-}
-
-aside {
-  border: dotted black 1px;
-  /* display: flex; */
-  /* justify-content: flex-start; */
-
-  margin-right: 20px;
-  /* width: auto; */
-  flex: 0 0 45%;
-}
-
-section {
-  border: solid black 1px;
-  /* display: flex; */
-  /* justify-content: flex-end; */
-
-  margin-left: 20px;
-  /* width: auto; */
-  flex: 0 0 55%;
-}
-header {
-  text-align: center;
-}
-
-
-p {
-  word-wrap: break-word;
-  padding: 2em;
-}
-#lyrics {
-  display: flex;
-  align-items: flex-start;
-  border: solid black 1px;
-  border-radius: 8px;
-  flex: 0 0 50%;
-}
-#wikiSummary {
-  display: flex;
-  align-items: flex-end;
-  border: solid black 1px;
-  border-radius: 8px;
-  flex: 0 0 50%;
-}
-
 form{
     margin: 2em;
 }
@@ -71,13 +20,56 @@ input {
     padding: 4px;
     margin: 6px;
 }
-#searchBtn{
+/* #searchBtn{
     
-}
+} */
 
 
 p{
     word-wrap:break-word;
     padding: 2em;
 }
+main {
+display: flex;
+justify-content: center;
+width: auto;
+margin: 2em;
+}
 
+aside {
+border: dotted black 1px;
+margin-right: 20px;
+flex: 0 0 45%;
+}
+
+section {
+border: solid black 1px;
+flex: 0 0 55%;
+}
+header {
+text-align: center;
+}
+
+
+p {
+word-wrap: break-word;
+padding: 2em;
+}
+
+
+footer {
+    display: flex;
+    
+}
+#lyrics {
+
+border: solid black 1px;
+border-radius: 8px;
+flex: 0 0 50%;
+}
+#wikiSummary {
+
+border: solid black 1px;
+border-radius: 8px;
+flex: 0 0 50%;
+}
