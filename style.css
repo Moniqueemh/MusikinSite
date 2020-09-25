@@ -68,8 +68,12 @@ border-radius: 8px;
 flex: 0 0 50%;
 }
 #wikiSummary {
-
+  
 border: solid black 1px;
 border-radius: 8px;
 flex: 0 0 50%;
+}
+
+#lyricsText {
+    white-space: pre;
 }
