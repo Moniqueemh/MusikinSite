@@ -8,7 +8,7 @@ $(document).ready(function () {
 
         let artist = $("#artistInput").val();
         let track = $("#trackInput").val();
-        let lastFmTrackInfoURL = "http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=" + lastFmKey + "&artist=" + artist + "&track=" + track + "&format=json";
+        let lastFmTrackInfoURL = "https://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=" + lastFmKey + "&artist=" + artist + "&track=" + track + "&format=json";
         let lyricUrl = "https://orion.apiseeds.com/api/music/lyric/" + artist + "/" + track + "?apikey=" + lyricKey;
 
         $.ajax({ // Calls apiSeeds lyrics to get lyric data
