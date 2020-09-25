@@ -15,8 +15,7 @@ $(document).ready(function () {
             url: lyricUrl,
             method: "GET"
         }).then(function (res) {
-            console.log(res.result.track.text);
-            $("#lyricsText").html(res.result.track.text)
+            $("#lyricsText").html(res.result.track.text) // Updates lyrics text with searched track lyrics
         })
         $.ajax({ // Calls lastFM api to display track information
             url: lastFmTrackInfoURL,
@@ -24,6 +23,9 @@ $(document).ready(function () {
         }).then(function (res) {
             console.log(res);
             $("#albumEl").text("Album: " + res.track.album.title); // Sets id albumEl text to the album name
+            $("#summaryText").html(res.track.wiki.summary) // Sets id summaryEl text to the wiki summary
+            $("#albumArt").attr("src", res.track.album.image[3]["#text"]) // Sets album cover
+            $("#albumLink").attr("href", res.track.url)
         });
     })
 
