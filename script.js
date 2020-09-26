@@ -25,7 +25,6 @@ $(document).ready(function () {
             url: lastFmTrackInfoURL,
             method: "GET"
         }).then(function (res) {
-            console.log(res);
             if ("track" in res) {
 
                 if ("album" in res.track) { // if track and album is found
