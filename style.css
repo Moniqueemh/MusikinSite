@@ -131,6 +131,10 @@ footer {
 
 }
 
+.hidden{
+    display: none;
+}
+
 /*Small devices 600px and lower  */
 /* W3schools media quiry reference */
 @media only screen and (max-width:480px){
