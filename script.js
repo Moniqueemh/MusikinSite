@@ -30,6 +30,7 @@ $(document).ready(function () {
                 if ("album" in res.track) { // if track and album is found
                     $("#albumEl").text("Album: " + res.track.album.title); // Sets id albumEl text to the album name
                     $("#albumArt").attr("src", res.track.album.image[3]["#text"]); // Sets album cover
+                    $("#albumArt").removeClass("hidden");
                     $("#albumLink").attr("href", res.track.url); // Adds link to album cover to go to song page
                 }
                 else { // if track is found but no album
