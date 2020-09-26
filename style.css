@@ -25,7 +25,8 @@ h2{
     padding: 5px;
 }
 form{
-    margin: 2em;
+    margin: auto;
+    padding: 10px;
 }
 input {
     display: block;
@@ -129,4 +130,36 @@ footer {
 
 }
 
+/*Small devices 600px and lower  */
+/* W3schools media quiry reference */
+@media only screen and (max-width:480px){
+    
+    .heading {
+        
+        padding:90px;
+    
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #albumArt{
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    #lyricsText{
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
