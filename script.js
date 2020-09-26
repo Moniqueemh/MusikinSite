@@ -13,19 +13,46 @@ $(document).ready(function () {
 
         $.ajax({ // Calls apiSeeds lyrics to get lyric data
             url: lyricUrl,
-            method: "GET"
+            method: "GET",
+            error: function () {
+                $("#lyricsText").text("No lyrics found"); // If no song is found, let user know
+            }
         }).then(function (res) {
-            $("#lyricsText").html(res.result.track.text) // Updates lyrics text with searched track lyrics
+            $("#lyricsText").html(res.result.track.text);  // Updates lyrics text with searched track lyrics        
         })
+
         $.ajax({ // Calls lastFM api to display track information
             url: lastFmTrackInfoURL,
             method: "GET"
         }).then(function (res) {
             console.log(res);
-            $("#albumEl").text("Album: " + res.track.album.title); // Sets id albumEl text to the album name
-            $("#summaryText").html(res.track.wiki.summary) // Sets id summaryEl text to the wiki summary
-            $("#albumArt").attr("src", res.track.album.image[3]["#text"]) // Sets album cover
-            $("#albumLink").attr("href", res.track.url)
+            if ("track" in res) {
+
+                if ("album" in res.track) { // if track and album is found
+                    $("#albumEl").text("Album: " + res.track.album.title); // Sets id albumEl text to the album name
+                    $("#albumArt").attr("src", res.track.album.image[3]["#text"]); // Sets album cover
+                    $("#albumLink").attr("href", res.track.url); // Adds link to album cover to go to song page
+                }
+                else { // if track is found but no album
+                    $("#albumEl").text("No album found");
+                    $("#albumArt").attr("src", "");
+                    $("#albumLink").attr("href", "");
+                }
+
+                if ("wiki" in res.track) { // if track and wiki is found
+                    $("#summaryText").html(res.track.wiki.summary);
+                }
+                else { // if track is found but no wiki
+                    $("#summaryText").text("No summary found");
+                }
+
+            }
+            else { // If no song data is found
+                $("#albumEl").text("No song data found");
+                $("#summaryText").text("No summary found");
+                $("#albumArt").attr("src", "");
+                $("#albumLink").attr("href", "");
+            }
         });
     })
 
